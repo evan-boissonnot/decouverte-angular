@@ -1,0 +1,5 @@
+@for (item of itemsNonEmpty(); track item.titre) {
+  <div>
+    {{ item.titre }} <button (click)="clickToDelete(item)">[-]</button>
+  </div>
+}

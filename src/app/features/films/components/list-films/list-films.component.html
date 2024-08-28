@@ -1,5 +1,4 @@
-@for (item of films; track item) {
-  <div>
-    {{ item.titre }}
-  </div>
-}
+<app-table-films
+    [items]="films"
+    (requireToDelete)="toDeleteOneItem($event)"
+/>

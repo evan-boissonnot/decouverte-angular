@@ -1,0 +1,7 @@
+@if(directors) {
+ <app-table-directors
+    [items]="directors"
+    (addRequested)="addOneDirector($event)"
+ ></app-table-directors>
+}
+

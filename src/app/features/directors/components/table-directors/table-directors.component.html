@@ -1,0 +1,14 @@
+<table>
+  <tbody>
+    @for (item of items(); track item.id) {
+      <tr>
+        <td>{{ item.surname }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+<button (click)="listenToClick()">Ajouter un item</button>
+
+
+
