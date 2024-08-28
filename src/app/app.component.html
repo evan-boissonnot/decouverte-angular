@@ -1,4 +1,13 @@
-<b>Ici un composant html</b>
+<ul>
+  <li>
+    <a routerLink="/">Home</a>
+    <a routerLink="directors">Directors</a>
+    <a routerLink="films">Films</a>
+    <a [routerLink]="['directors', 1]">Directors 1</a>
+  </li>
+</ul>
 
-<app-list-directors></app-list-directors>
+<button (click)="goToDirectors()"></button>
+
+<router-outlet ></router-outlet>
 

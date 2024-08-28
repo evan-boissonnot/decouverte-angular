@@ -1,0 +1,5 @@
+<form #filmForm="ngForm" (ngSubmit)="save()">
+  <input type="email" maxlength="120" required name="titre" [(ngModel)]="film.titre" />
+
+  <button [disabled]="! filmForm.form.valid" type="submit">Sauvegarder</button>
+</form>

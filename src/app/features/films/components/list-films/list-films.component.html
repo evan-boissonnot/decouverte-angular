@@ -1,4 +1,25 @@
-<app-table-films
-    [items]="films"
-    (requireToDelete)="toDeleteOneItem($event)"
-/>
+<!-- @let films = films$ | async; -->
+
+<!-- @if(films) { -->
+<!-- @if(films$ | async; as films) {
+  <app-table-films
+      [items]="films"
+      (requireToDelete)="toDeleteOneItem($event)"
+  />
+} -->
+
+<div>
+
+</div>
+
+  <app-table-films
+      [items]="films"
+      (requireToDelete)="toDeleteOneItem($event)"
+  />
+
+
+  <lucca-add-film></lucca-add-film>
+
+<!-- @if(films$ | async; as films) {
+  {{ films.length }}
+} -->

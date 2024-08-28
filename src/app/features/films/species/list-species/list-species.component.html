@@ -1,0 +1,9 @@
+
+<mat-form-field>
+  <mat-label>Espèces</mat-label>
+  <select matNativeControl required>
+    @for (item of items(); track item.label) {
+      <option value="{{item.label}}">{{ item.label }}</option>
+    }
+  </select>
+</mat-form-field>
